@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogResultado</class>
+ <widget class="QDialog" name="DialogResultado">
+  <property name="windowTitle">
+   <string>Introducir Resultado</string>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QLabel" name="lbl_partido"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QSpinBox" name="spin_local">
+       <property name="minimum"><number>0</number></property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel">
+       <property name="text"><string> - </string></property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spin_visitante">
+       <property name="minimum"><number>0</number></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_guardar">
+     <property name="text"><string>Guardar Resultado</string></property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

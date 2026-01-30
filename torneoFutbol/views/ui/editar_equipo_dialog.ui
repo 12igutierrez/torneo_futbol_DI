@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditarEquipoDialog</class>
+ <widget class="QDialog">
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QLineEdit" name="txt_nombre">
+     <property name="placeholderText">
+      <string>Nombre del equipo</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="txt_curso">
+     <property name="placeholderText">
+      <string>Curso</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="txt_color">
+     <property name="placeholderText">
+      <string>Color camiseta</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_guardar">
+     <property name="text">
+      <string>Guardar cambios</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+</ui>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogParticipante</class>
+ <widget class="QDialog" name="DialogParticipante">
+  <property name="windowTitle">
+   <string>Crear Participante</string>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QLineEdit" name="txt_nombre">
+     <property name="placeholderText">
+      <string>Nombre</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="txt_fecha">
+     <property name="placeholderText">
+      <string>Fecha nacimiento (YYYY-MM-DD)</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="txt_curso">
+     <property name="placeholderText">
+      <string>Curso</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="combo_tipo">
+     <item><property name="text"><string>Jugador</string></property></item>
+     <item><property name="text"><string>Árbitro</string></property></item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="combo_posicion">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <item><property name="text"><string>Portero</string></property></item>
+     <item><property name="text"><string>Defensa</string></property></item>
+     <item><property name="text"><string>Centrocampista</string></property></item>
+     <item><property name="text"><string>Delantero</string></property></item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_guardar">
+     <property name="text">
+      <string>Guardar</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

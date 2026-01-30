@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>849</width>
+    <height>1154</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QLabel" name="lbl_titulo">
+     <property name="styleSheet">
+      <string>font-size:18px; font-weight:bold;</string>
+     </property>
+     <property name="text">
+      <string>Gestión de Torneo de Fútbol</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Equipos</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <layout class="QHBoxLayout">
+        <item>
+         <widget class="QLineEdit" name="txt_nombre">
+          <property name="placeholderText">
+           <string>Nombre del equipo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_curso">
+          <property name="placeholderText">
+           <string>Curso</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txt_color">
+          <property name="placeholderText">
+           <string>Color camiseta</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_add">
+          <property name="text">
+           <string>Añadir equipo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_edit_equipo">
+          <property name="text">
+           <string>Editar equipo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_escudo">
+          <property name="text">
+           <string>Asignar escudo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_delete_equipo">
+          <property name="text">
+           <string>Eliminar equipo</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="table_equipos">
+        <property name="columnCount">
+         <number>4</number>
+        </property>
+        <property name="horizontalHeaderLabels" stdset="0">
+         <stringlist>
+          <string>Nombre del equipo</string>
+          <string>Curso</string>
+          <string>Color camiseta</string>
+          <string>Escudo</string>
+         </stringlist>
+        </property>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Participantes</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <layout class="QHBoxLayout">
+        <item>
+         <widget class="QPushButton" name="btn_add_participante">
+          <property name="text">
+           <string>Añadir participante</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_asignar_equipo">
+          <property name="text">
+           <string>Asignar equipo a jugador</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_edit_participante">
+          <property name="text">
+           <string>Editar participante</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_delete_participante">
+          <property name="text">
+           <string>Eliminar participante</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="table_participantes">
+        <property name="columnCount">
+         <number>6</number>
+        </property>
+        <property name="horizontalHeaderLabels" stdset="0">
+         <stringlist>
+          <string>Nombre</string>
+          <string>Tipo</string>
+          <string>Fecha nacimiento</string>
+          <string>Curso</string>
+          <string>Posición</string>
+          <string>Equipo</string>
+         </stringlist>
+        </property>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Partidos</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <layout class="QHBoxLayout">
+        <item>
+         <widget class="QPushButton" name="btn_crear_partido">
+          <property name="text">
+           <string>Crear partido</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_estadistica">
+          <property name="text">
+           <string>Estadísticas jugadores</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_edit_partido">
+          <property name="text">
+           <string>Editar partido</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_delete_partido">
+          <property name="text">
+           <string>Eliminar partido</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="table_partidos">
+        <property name="columnCount">
+         <number>6</number>
+        </property>
+        <property name="horizontalHeaderLabels" stdset="0">
+         <stringlist>
+          <string>Equipo local</string>
+          <string>Equipo visitante</string>
+          <string>Fecha</string>
+          <string>Árbitro</string>
+          <string>Goles local</string>
+          <string>Goles visitante</string>
+         </stringlist>
+        </property>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Clasificación</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QPushButton" name="btn_generar_eliminatorias">
+        <property name="text">
+         <string>Generar eliminatorias</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="table_clasificacion">
+        <property name="columnCount">
+         <number>9</number>
+        </property>
+        <property name="horizontalHeaderLabels" stdset="0">
+         <stringlist>
+          <string>Equipo</string>
+          <string>PJ</string>
+          <string>PG</string>
+          <string>PE</string>
+          <string>PP</string>
+          <string>GF</string>
+          <string>GC</string>
+          <string>DG</string>
+          <string>Puntos</string>
+         </stringlist>
+        </property>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <spacer>
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_ayuda">
+       <property name="text">
+        <string>Ayuda</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_creditos">
+       <property name="text">
+        <string>Créditos</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

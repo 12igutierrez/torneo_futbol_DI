@@ -1,0 +1,264 @@
+/* ==================================================
+   RESET + BASE
+   ================================================== */
+
+* {
+    font-family: "Segoe UI Variable", "Inter", "Segoe UI";
+    font-size: 13px;
+}
+
+/* ==================================================
+   FONDO GENERAL CON DEGRADADO
+   ================================================== */
+
+QWidget {
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 1,
+        stop: 0 #0f2027,
+        stop: 0.5 #203a43,
+        stop: 1 #2c5364
+    );
+    color: #e8edf2;
+    font-family: "Segoe UI", "Inter", Arial;
+}
+
+
+
+/* ==================================================
+   TÍTULOS Y SECCIONES
+   ================================================== */
+
+QGroupBox {
+    background-color: transparent;
+    border: 1px solid #263041;
+    border-radius: 14px;
+    margin-top: 13px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 16px;
+    background-color: transparent;
+    border-radius: 6px;
+    color: #9aa4b2;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+/* ==================================================
+   BOTONES NORMALES (VERDE OSCURO PROFESIONAL)
+   ================================================== */
+
+QPushButton {
+    background-color: #247a55;
+    border: none;
+    border-radius: 8px;
+    padding: 1px 5px;
+    color: #eaf6ef;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #2d8f64;
+}
+
+QPushButton:pressed {
+    background-color: #1d5f44;
+}
+
+
+
+/* BOTÓN PRINCIPAL */
+QPushButton#btn_generar_eliminatorias{
+    background-color: #1fbf75;
+    border: none;
+    color: #0b0f14;
+    font-weight: 800;
+}
+
+QPushButton#btn_generar_eliminatorias:hover{
+    background-color: #27d884;
+}
+
+
+
+/* ==================================================
+   BOTONES DE ACCIÓN PELIGROSA (ROJO ELEGANTE)
+   ================================================== */
+
+QPushButton#btn_delete,
+QPushButton#btn_delete_partido,
+QPushButton#btn_delete_equipo,
+QPushButton#btn_delete_participante {
+    background-color: #8c2f2f;
+    color: #f8eaea;
+}
+
+QPushButton#btn_delete:hover,
+QPushButton#btn_delete_partido:hover,
+QPushButton#btn_delete_equipo:hover,
+QPushButton#btn_delete_participante:hover {
+    background-color: #a33a3a;
+}
+
+
+
+/* ==================================================
+   TABLAS – COMPACTAS Y PROFESIONALES
+   ================================================== */
+
+QTableWidget {
+    background-color: #141e26;
+    gridline-color: #253a46;
+    font-size: 11px;
+    alternate-background-color: #18242d;
+}
+
+/* CELDAS */
+QTableWidget::item {
+    height: 8px;
+    color: #e6eef3;
+}
+
+QTableWidget::item:selected {
+    background-color: #2f8f63;
+    color: #ffffff;
+}
+
+/* CABECERAS */
+QHeaderView::section {
+    background-color: #0e151b;
+    color: #b8c7d1;
+    font-size: 10px;
+    font-weight: 600;
+    border: none;
+}
+
+/* OCULTAR BORDES FEOS */
+QTableCornerButton::section {
+    background-color: #0e151b;
+    border: none;
+}
+
+
+
+/* ==================================================
+   CLASIFICACIÓN (ESTRELLA)
+   ================================================== */
+
+QTableWidget#table_clasificacion {
+    background-color: #0f1520;
+    border: 2px solid #1fbf75;
+}
+
+QTableWidget#table_clasificacion::item {
+    padding: 14px;
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   INPUTS
+   ================================================== */
+
+QLineEdit,
+QComboBox,
+QDateEdit {
+    background-color: #101622;
+    border: 1px solid #263041;
+    border-radius: 8px;
+    color: #e8edf2;
+}
+
+QLineEdit:focus,
+QComboBox:focus,
+QDateEdit:focus {
+    border-color: #1fbf75;
+}
+
+
+/* ==================================================
+   SCROLLBARS
+   ================================================== */
+
+QScrollBar:vertical {
+    background: #0b0f14;
+    width: 14px;
+}
+
+QScrollBar::handle:vertical {
+    background: #263041;
+    border-radius: 7px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #3a4a63;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line {
+    height: 0;
+}
+
+
+/* ==================================================
+   DIÁLOGOS
+   ================================================== */
+
+QDialog {
+    background-color: #0b0f14;
+    border-radius: 14px;
+}
+
+
+/* ==================================================
+   MENSAJES
+   ================================================== */
+
+QMessageBox {
+    background-color: transparent;
+}
+
+QMessageBox QWidget {
+    background-color: transparent;
+}
+
+QMessageBox QLabel {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QMessageBox QPushButton {
+    min-width: 90px;
+    padding: 4px 10px;
+}
+
+
+/* ==================================================
+   CABECERA / TÍTULO PRINCIPAL
+   ================================================== */
+
+QLabel#lbl_titulo, #lbl_eliminatorias {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* 🔥 ESTO ES LO QUE FALTABA */
+QLabel#lbl_titul, #lbl_eliminatorias {
+    qproperty-alignment: AlignCenter;
+}
+
+QLabel#lbl_equipo, #lbl_jugador {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}

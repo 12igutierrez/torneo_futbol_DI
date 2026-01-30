@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogPartido</class>
+ <widget class="QDialog" name="DialogPartido">
+  <property name="windowTitle">
+   <string>Crear Partido</string>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QComboBox" name="combo_local"/>
+   </item>
+   <item>
+    <widget class="QComboBox" name="combo_visitante"/>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="txt_fecha">
+     <property name="placeholderText">
+      <string>Fecha (YYYY-MM-DD HH:MM)</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="combo_arbitro"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_guardar">
+     <property name="text">
+      <string>Guardar Partido</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
